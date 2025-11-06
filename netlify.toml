@@ -1,0 +1,14 @@
+[functions]
+  node_bundler = "esbuild"
+  included_files = []
+
+# Routes jolies
+[[redirects]]
+  from = "/api/webhooks/orders-create"
+  to = "/.netlify/functions/orders-create"
+  status = 200
+
+[[redirects]]
+  from = "/health"
+  to = "/.netlify/functions/health"
+  status = 200
